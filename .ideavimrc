@@ -1,0 +1,16 @@
+let mapleader=" "
+
+set relativenumber = true
+map <C-c> <Esc>
+map <leader>rn <Action>(RenameElement)
+map <leader>gd <Action>(Debug)
+map <leader>qd <Action>(Stop)
+map <leader>zz <Action>(ToggleDistractionFreeMode)
+
+map <leader>tf <Action>(SelectInProjectView)
+map <leader>aa <Action>(Annotate)
+map <leader>gh <Action>(Vcs.ShowTabbedFileHistory)
+map <leader>ne <Action>(GotoNextError)
+
+map <leader>bp <Action>(ToggleLineBreakpoint)
+map <leader>tt <Action>(FileStructurePopup)

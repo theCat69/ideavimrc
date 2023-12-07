@@ -14,3 +14,16 @@ map <leader>ne <Action>(GotoNextError)
 
 map <leader>bp <Action>(ToggleLineBreakpoint)
 map <leader>tt <Action>(FileStructurePopup)
+
+map <leader>? <Action>(RecentFiles)
+map <leader>/ <Action>(Find)
+map <leader>sg <Action>(FindInPath)
+map <leader>sf <Action>(GoToFile)
+
+map dsk ^^d$k^^i <Esc>pjddk^^ 
+map dxk ^^d$k$pjddk$
+map dsj ^^d$j^^i <Esc>pkdd^^ 
+map dxj ^^d$j$pkdd$  
+
+map <A-S-K> ddkkp
+map <A-S-J> ddp

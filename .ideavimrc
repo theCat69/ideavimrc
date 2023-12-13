@@ -1,6 +1,9 @@
 let mapleader=" "
 
 set relativenumber = true
+
+set clipboard+=unnamed
+
 map <C-c> <Esc>
 map <leader>rn <Action>(RenameElement)
 map <leader>gd <Action>(Debug)
@@ -19,11 +22,13 @@ map <leader>? <Action>(RecentFiles)
 map <leader>/ <Action>(Find)
 map <leader>sg <Action>(FindInPath)
 map <leader>sf <Action>(GoToFile)
+map <leader>rf <Action>(RefactoringMenu)
 
-map dsk ^^d$k^^i <Esc>pjddk^^ 
-map dxk ^^d$k$pjddk$
-map dsj ^^d$j^^i <Esc>pkdd^^ 
-map dxj ^^d$j$pkdd$  
+map dsk _d$k_i <Esc>pjddk_ 
+map dxk _d$k$pjddk$
+map dsj _d$j_i <Esc>pkdd_ 
+map dxj _d$j$pkdd$  
 
 map <A-S-K> ddkkp
 map <A-S-J> ddp
+

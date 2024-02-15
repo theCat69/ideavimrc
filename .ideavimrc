@@ -2,13 +2,27 @@ let mapleader=" "
 
 set relativenumber = true
 
-set clipboard+=unnamed
+vmap <C-b> "*y
+nmap <C-v> "*p
+cmap <C-v> "*p
+
+" Greatest remap EVER!! 
+" Let me explain, this remap while in visiual mode
+" will delete what is currently highlighted and replace it 
+" with what is in the register BUT it will YANK (delete) it 
+" to a VOID register. Meaning I still have what I originally had
+" when I pasted. I don't loose the previous thing I YANKED!
+" FVD note: this doesn't work but i am really interested in it so i let it
+" like this for now 
+" vmap <leader>p "_dP
 
 map <C-c> <Esc>
+
+map <leader>zz <Action>(HideAllWindows)
+
 map <leader>rn <Action>(RenameElement)
 map <leader>gd <Action>(Debug)
 map <leader>qd <Action>(Stop)
-map <leader>zz <Action>(ToggleDistractionFreeMode)
 
 map <leader>tf <Action>(SelectInProjectView)
 map <leader>aa <Action>(Annotate)
@@ -21,7 +35,7 @@ map <leader>tt <Action>(FileStructurePopup)
 map <leader>? <Action>(RecentFiles)
 map <leader>/ <Action>(Find)
 map <leader>sg <Action>(FindInPath)
-map <leader>sf <Action>(GoToFile)
+map <leader>sf <Action>(GotoFile)
 map <leader>rf <Action>(RefactoringMenu)
 
 map dsk _d$k_i <Esc>pjddk_ 
@@ -32,3 +46,6 @@ map dxj _d$j$pkdd$
 map <A-S-K> ddkkp
 map <A-S-J> ddp
 
+" Comments 
+nmap gc <Action>(CommentByLineComment)
+vmap gc <Action>(CommentByLineComment)
